@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+.navbar-default {
+	background: radial-gradient(
+		72.95% 11813.04% at 85.2% 50%,
+		rgba(122, 0, 180, 0.75) 0%,
+		rgba(0, 0, 0, 0.3975) 100%
+	);
+	background-blend-mode: color;
+	/* filter: blur(4px); */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+}
+
+#heading:hover {
+	color: aliceblue;
+}
+
+.navbar-default .navbar-brand {
+	color: aliceblue;
+	font-weight: 600;
+	font-size: 38px;
+}
+.navbar-default .navbar-nav > li > a {
+	color: aliceblue;
+}
+
+#navbar-text {
+	color: aliceblue;
+
+	font-weight: 600;
+	font-size: 22px;
+}
+
+.navbar-default .navbar-nav > li > a {
+	margin: 0 1.2rem;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background-color: #f1f1f1a4;
+	color: #bb31d6;
+	border-radius: 24px;
+}
+
+body {
+	font-family: "Rajdhani", sans-serif;
+	background-image: url("../img/image.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}

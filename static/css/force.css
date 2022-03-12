@@ -1,0 +1,94 @@
+h3 {
+	padding: 1em;
+	color: #1d1d1d;
+	text-align: center;
+	background: rgba(230, 224, 233, 0.692);
+	border-radius: 24px;
+	width: fit-content;
+}
+
+.legend {
+	list-style: none;
+}
+
+.legend li {
+	float: left;
+	margin-right: 15px;
+
+	font-size: 14px;
+}
+
+.legend span {
+	/*border: 1px solid white;*/
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 3px;
+}
+.label {
+	font-size: 120%;
+}
+
+.label-prez {
+	background-color: #092140;
+}
+
+.label-title {
+	background-color: #f24738;
+}
+
+.label-pos {
+	background-color: #05a64c;
+}
+
+.label-neut {
+	background-color: #024959;
+}
+
+.label-neg {
+	background-color: #bf2a2a;
+}
+
+line.link.prez-speech {
+	fill: none;
+	stroke: pink;
+	stroke-width: 3px;
+}
+
+line.link.speech-bigram {
+	fill: none;
+	stroke: grey;
+	stroke-width: 1px;
+}
+
+#force {
+	background: rgba(230, 224, 233, 0.692);
+	border-radius: 24px;
+	padding-top: 1rem;
+}
+
+.node1 {
+	stroke: black;
+	stroke-width: 2;
+}
+
+text {
+	font-weight: 400;
+}
+
+#about {
+	background: rgba(230, 224, 233, 0.692);
+	border-radius: 24px;
+}
+
+#about.h2 {
+	font-family: "Cabin", sans-serif;
+	font-weight: 500;
+	color: #962d3e;
+}
+
+#about.p {
+	font-family: Source Sans Pro, sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+}

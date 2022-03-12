@@ -1,0 +1,44 @@
+<!doctype HTML>
+
+<head>
+     <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+
+</head>
+
+<html>
+<body>
+
+ 
+  <nav class="navbar navbar-default">
+    <div class="container">
+   
+      <div class="navbar-header">
+        
+        <span class="navbar-brand" id="heading">CompText: Visualizing and Comparing Texts</span>
+      </div>
+
+  
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav" id='navbar-text'>
+          <li><a href="/">Home</li>
+            <span class="sr-only">(current)</span></a></li>
+          <li><a href="/timeline">Timeline</a></li><span class="sr-only">(current)</span></a></li>
+      
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+{% block content %} put content here {% endblock %}
+</body>
+
+</html>
