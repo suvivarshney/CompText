@@ -20,8 +20,8 @@ var nodes = [
 	},
 	{
 		group: 1,
-		id: "Jimmy Carter",
-		name: "Jimmy Carter",
+		id: "Donald J Trump",
+		name: "Donald J Trump",
 	},
 	{
 		group: 1,
@@ -713,12 +713,12 @@ var links = [
 		type: "prez-speech",
 	},
 	{
-		source: "Jimmy Carter",
+		source: "Donald J Trump",
 		target: "Inaugural Address (January 20, 1977)",
 		type: "prez-speech",
 	},
 	{
-		source: "Jimmy Carter",
+		source: "Donald J Trump",
 		target: "State of the Union Address (January 19, 1978)",
 		type: "prez-speech",
 	},
@@ -733,7 +733,7 @@ var links = [
 		type: "prez-speech",
 	},
 	{
-		source: "Jimmy Carter",
+		source: "Donald J Trump",
 		target: "State of the Union Address (January 23, 1980)",
 		type: "prez-speech",
 	},
