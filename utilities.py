@@ -9,30 +9,19 @@ def str_parser(sentence):
 
     all_lower = sentence.lower()
 
-    clean_text = re.sub(r'\p{P}', '', all_lower)  # removes punctuatation from unicode
+    clean_text = re.sub(r'\p{P}', '', all_lower)  
 
     indiv_words = clean_text.split()
 
     for word in excess:
         while word in indiv_words:
-            indiv_words.remove(word)         # removes words like 'and', 'the', 'or'
+            indiv_words.remove(word)        
 
     return indiv_words
 
 
 def make_nodes_and_links():
-    """Creates dataset for d3 force layout.
-
-    Paths are source/target/type list of dictionaries, nodes are a list of
-    id/name/group dictionaries.
-    Node groups:
-    1: president name
-    2: speech title
-    3: positive bigram
-    4: neutral bigram
-    5: negative bigram
-
-    """
+   
 
    
     speech_lst = Speech.query.all()
@@ -101,7 +90,7 @@ def make_nodes_and_links():
 
 
 def graph_data():
-    """Makes a data dictionary for vis.js timeline."""
+
 
     all_speeches = Speech.query.all()
 

@@ -59,16 +59,16 @@ def load_speeches():
 def load_collocations():
  
 
-    all_bigrams = top_bigrams()  # { prezname: { speech1: [(phrases) (moarphrases)] } }
-    # print all_bigrams
-    sentiments = bigram_sentiment()    # {(phrase): 'pos', 'neutral', 'neg'}
+    all_bigrams = top_bigrams()  
+   
+    sentiments = bigram_sentiment()    
 
-    for prez in all_bigrams:  # returns list for each prez
+    for prez in all_bigrams:  
         for p_speech in all_bigrams[prez]:
             current_speech = Speech.query.filter_by(title=p_speech).first()
 
             for bigram in all_bigrams[prez][p_speech]:
-                # print bigram, type(bigram)
+             
                 sentiment = sentiments[bigram]
 
                 phrase = Collocation(phrase=' '.join(bigram), sentiment_score=sentiment)
@@ -78,7 +78,7 @@ def load_collocations():
             db.session.commit()
 
             for bigram in all_bigrams[prez][p_speech]:
-                # print bigram, type(bigram)
+                
                 new_bigram = Collocation.query.filter_by(phrase=' '.join(bigram)).first()
 
                 current_bigrams = SpeechCollocation(speech_id=current_speech.speech_id,
@@ -90,7 +90,7 @@ def load_collocations():
 
             db.session.commit()
 
-############################
+
 if __name__ == '__main__':
     connect_to_db(app)
 

@@ -1,7 +1,7 @@
 import nltk.classify.util
 from nltk.classify import NaiveBayesClassifier
 import collections
-from nltk.collocations import BigramCollocationFinder
+from nltk. import BigramCollocationFinder
 from nltk.metrics import *
 import json
 import itertools
@@ -99,7 +99,7 @@ with open('allspeeches.json') as speeches:
 
 
 def analyze_speeches():
-    """Sentiment analysis on presidential speeches."""
+   
 
     sentiment_scores = {}
 

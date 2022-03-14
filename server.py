@@ -13,7 +13,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 @app.route('/forceData')
 def get_force_data():
-    """Turn the links list of sources & targets into JSON."""
+   
 
     nodes, links = make_nodes_and_links()
     forceData = {'links': links, 'nodes': nodes}
@@ -29,13 +29,13 @@ def get_force_data():
 
 @app.route('/')
 def index():
-    """Main page with d3 force layout."""
+
     return render_template('index.html')
 
 
 @app.route('/timeline.json')
 def get_timeline_data():
-    """Create JSON data object for chart.js."""
+ 
     items, groups = graph_data()
 
     return jsonify({'items': items, 'groups': groups})

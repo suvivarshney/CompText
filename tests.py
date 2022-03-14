@@ -6,7 +6,7 @@ import json
 
 
 class FlaskTestRoutes(TestCase):
-    """docstring for FlaskTestRoutes"""
+ 
 
     def setUp(self):
         self.client = app.test_client()
@@ -23,7 +23,7 @@ class FlaskTestRoutes(TestCase):
 
 
 class FlaskTestDB(TestCase):
-    """docstring for FlaskTestsDB"""
+
 
     def setUp(self):
         self.client = app.test_client()

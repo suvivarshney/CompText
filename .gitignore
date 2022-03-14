@@ -1,0 +1,8 @@
+/env/
+.DS_Store
+*.pyc
+/templates/d3sample.html
+/speechescrape
+/env1/
+/heroku-env/
+/speeches/
